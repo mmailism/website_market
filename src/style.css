@@ -137,3 +137,17 @@ body
 {
     color: var(--medium-yellow);
 }
+
+img
+{
+    width: auto;
+    height: 75px;
+}
+.header .shopping-cart
+{
+    position: absolute;
+    top: 110%;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
