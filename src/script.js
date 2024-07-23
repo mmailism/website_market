@@ -1,10 +1,5 @@
-const searchForm = document.querySelector(".search-btn");
+let searchForm = document.querySelector('.search-form');
 
-searchForm.addEventListener("click", () =>
-{
-    searchFormBtn();
-})
-function searchFormBtn()
-{
-    searchForm.classList.toggle("open")
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');  
 }
