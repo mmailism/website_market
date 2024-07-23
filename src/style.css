@@ -100,8 +100,8 @@ body
 .header .search-form
 {
     position: absolute;
-    top:110%;
-    right: 20px;
+    top: 110%;
+    right: -110%;
     width: 500px;
     height: 50px;
     background: #fff;
