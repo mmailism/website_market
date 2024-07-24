@@ -54,14 +54,16 @@ img
     font-size: 18px;
     font-weight: 600;
     border-radius: 5px;
-    border: 2px solid var(--black);
+    border: 1px solid var(--black);
     color: var(--black);
     cursor: pointer;
+    background: none;
 }
 .btn:hover
 {
     background: var(--medium-yellow);
-    color: var(--black);
+    color: var(--write-silver);
+    box-shadow: 2px 3px 10px rgba(240, 205, 8, 0.877);
 }
 
 .header
@@ -167,13 +169,19 @@ img
 {
     position: absolute;
     top: 110%;
-    right: 20px;
+    right: -110%;
     padding: 10px;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
     width: 310px;
     background: #fff;
 }
+
+.header .shopping-cart.active{
+    right: 20px;
+    transition: .4s linear;
+}
+
 .header .shopping-cart .box
 {
     display: flex;
@@ -223,4 +231,75 @@ img
     display: block;
     text-align: center;
     margin: 10px;
+}
+
+.header .login-form
+{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 300px;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+}
+.header .login-form h3
+{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.header .login-form .box
+{
+    width: 100%;
+    margin: 7px 0;
+    background: #eee;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: var(--black);
+    text-transform: none;
+}
+.header .login-form p
+{
+    font-size: 14px;
+    padding: 5px 0;
+    color: var(--light-black-color);
+}
+.header .login-form p a
+{
+    color: var(--medium-blue);
+    text-decoration: underline;
+}
+
+/* media queries */
+@media (max-width:991px) {
+    html
+    {
+        font-size: 55%;
+    }
+    .header
+    {
+        padding: 20px;
+    }
+}
+@media (max-width:768px) {
+    .header .navbar
+    {
+        position: absolute;
+        top: 110%;
+        right: 20px;
+        width: 300px;
+        box-shadow: var(--box-shadow);
+        border-radius: 5px;
+        background: #fff;
+    }
+}
+@media (max-width:450px) {
+    html
+    {
+        font-size: 50%;
+    }
 }
