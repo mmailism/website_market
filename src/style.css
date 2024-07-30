@@ -84,8 +84,8 @@ section{
 .btn:hover
 {
     background: var(--medium-yellow);
-    color: var(--write-silver);
-    box-shadow: 2px 3px 10px rgba(240, 205, 8, 0.877);
+    color: #fff;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .header
@@ -349,12 +349,20 @@ section{
     cursor: pointer;
     background: none;
 }
+.cover:hover
+{
+    background: var(--medium-yellow);
+    color: var(--black);
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+}
 
 .features .box-container
 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 .features .box-container .box
 {
@@ -423,6 +431,10 @@ section{
     }
     section{
         padding: 20px;
+    }
+    .features .box-container{
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
 @media (max-width:768px) {
