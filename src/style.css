@@ -141,7 +141,7 @@ img
 .header .search-form.active
 {
     right: 20px;
-    transition: .4s linear;
+    transition: 0.4s linear;
 }
 .header .search-form input
 {
