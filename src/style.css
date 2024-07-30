@@ -9,10 +9,10 @@
     --medium-blue:#297dc9;
     --black:#130f40;
     --light-black-color:#666;
-    --box-shadow: 1px 5px 10px rgba(0,0,0,.1);
+    --box-shadow: 1px 5px 15px rgba(0,0,0,.1);
     --border: 2px solid rgba(0,0,0,.1);
     --outline: 1px solid rgba(0,0,0,.1);
-    --outline-hover: 5px solid var(--black);
+    --outline-hover: 5px solid var(--medium-yellow);
 }
 
 *{
@@ -58,6 +58,15 @@ section{
     font-size: 35px;
     color: var(--black);
 }
+.heading span
+{
+    background: var(--medium-yellow);
+    color: #fff;
+    display:  inline-block;
+    padding: 5px 30px;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
 
 .btn
 {
@@ -70,7 +79,7 @@ section{
     border: 1px solid var(--black);
     color: var(--black);
     cursor: pointer;
-    background: none;
+    /* background: none; */
 }
 .btn:hover
 {
@@ -341,6 +350,61 @@ section{
     background: none;
 }
 
+.features .box-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+.features .box-container .box
+{
+    padding: 30px 20px;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -10px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+.features .box-container .box:hover
+{
+    outline: var(--outline-hover);
+    outline-offset: 0px;
+}
+.features .box-container .box img
+{
+    margin: 10px 0;
+    height: 150px;
+    width: auto;
+}
+.features .box-container .box h3
+{
+    font-size: 25px;
+    line-height: 1.8;
+    color: var(--black);
+}
+.features .box-container .box p
+{
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--light-black-color);
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -391,4 +455,8 @@ section{
     html{
         font-size: 50%;
     }
+    .heading{
+        font-size: 25px;
+    }
+
 }
