@@ -46,6 +46,19 @@ img
     padding: 5px;
 }
 
+section{
+    padding: 20px 9%;
+}
+
+.heading
+{
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 30px;
+    font-size: 35px;
+    color: var(--black);
+}
+
 .btn
 {
     margin-top: 10px;
@@ -141,7 +154,7 @@ img
 .header .search-form.active
 {
     right: 20px;
-    transition: 0.4s linear;
+    transition: all 0.3s ease;
 }
 .header .search-form input
 {
@@ -179,7 +192,7 @@ img
 
 .header .shopping-cart.active{
     right: 20px;
-    transition: .4s linear;
+    transition: all 0.3s ease;
 }
 
 .header .shopping-cart .box
@@ -245,6 +258,11 @@ img
     background: #fff;
     text-align: center;
 }
+.header .login-form.active
+{
+    right: 20px;
+    transition: all 0.3s ease;
+}
 .header .login-form h3
 {
     font-size: 25px;
@@ -274,6 +292,61 @@ img
     text-decoration: underline;
 }
 
+/* home */
+
+.home
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/img/banner-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 170px;
+    padding-bottom: 100px;
+}
+
+.home .content{
+    text-align: center;
+    width: 600px;
+}
+
+.home .content h3{
+    color: var(--write-silver);
+    font-size: 30px;
+}
+
+.home .content h3 span{
+    color: var(--medium-yellow);
+}
+
+.home .content p{
+    color: var(--light-cream);
+    font-size: 17px;
+    padding: 10px 0;
+    line-height: 1.8;
+}
+
+.cover
+{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid var(--write-silver);
+    color: var(--write-silver);
+    cursor: pointer;
+    background: none;
+}
+
+
+
+
+
+
+
 /* media queries */
 @media (max-width:991px) {
     html
@@ -284,22 +357,38 @@ img
     {
         padding: 20px;
     }
+    section{
+        padding: 20px;
+    }
 }
 @media (max-width:768px) {
-    .header .navbar
-    {
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .search-form{
+        width: 90%;
+    }
+    .header .navbar{
         position: absolute;
         top: 110%;
-        right: 20px;
+        right: -110%;
         width: 300px;
         box-shadow: var(--box-shadow);
         border-radius: 5px;
         background: #fff;
     }
+    .header .navbar.active{
+        right: 20px;
+        transition: all 0.3s ease;
+    }
+    .header .navbar a{
+        font-size: 18px;
+        margin: 20px 25px;
+        display: block;
+    }
 }
 @media (max-width:450px) {
-    html
-    {
+    html{
         font-size: 50%;
     }
 }
