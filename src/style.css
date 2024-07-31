@@ -448,7 +448,48 @@ section{
     padding: 5px 0;
 }
 
-
+.categories .box-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 15px;
+    /* margin-left: 8%; */
+    /* margin-right: 8%; */
+}
+.categories .box-container .box
+{
+    padding: 30px 20px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    outline: var(--outline);
+    outline-offset: -10px;
+    text-align: center;
+}
+.categories .box-container .box:hover
+{
+    outline: var(--outline-hover);
+    outline-offset: 0px;
+}
+.categories .box-container .box img
+{
+    margin: 10px 0;
+    height: 150px;
+    width: auto;
+}
+.categories .box-container .box h3
+{
+    font-size: 20px;
+    color: var(--black);
+    line-height: 1.8;
+}
+.categories .box-container .box h3
+{
+    font-size: 17px;
+    color: var(--light-black-color);
+    line-height: 1.8;
+    padding: 10px;
+}
 
 
 
