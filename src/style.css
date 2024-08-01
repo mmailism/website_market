@@ -566,8 +566,34 @@ section{
     margin-bottom: 10px;
     border-bottom: var(--border);
 }
-
-
+.blogs .box-container .box .content .icons a
+{
+    color: var(--light-black-color);
+    font-size: 15px;
+}
+.blogs .box-container .box .content .icons a:hover
+{
+    color: var(--black);
+}
+.blogs .box-container .box .content .icons a i
+{
+    color: var(--medium-yellow);
+    padding-right: 5px;
+}
+.blogs .box-container .box .content h3
+{
+    line-height: 1.8;
+    color: var(--black);
+    font-size: 22px;
+    padding: 5px 0;
+}
+.blogs .box-container .box .content p
+{
+    line-height: 1.8;
+    color: var(--light-black-color);
+    font-size: 15px;
+    padding: 5px 0;
+}
 
 
 
