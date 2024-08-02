@@ -617,6 +617,7 @@ section{
 }
 .footer .box-container .box .links
 {
+    text-transform: none;
     display: block;
     font-size: 15px;
     color: var(--light-black-color);
@@ -673,6 +674,20 @@ section{
     width: auto;
     transform: translateY(30%);
 }
+.footer .credit
+{
+    text-align: center;
+    margin-top: 25px;
+    padding: 5px;
+    padding-top: 12px;
+    font-size: 16px;
+    color: var(--light-black-color);
+    border-top: var(--border);
+}
+.footer .credit span
+{
+    color: var(--medium-yellow);
+}
 
 
 /* media queries */
@@ -726,5 +741,38 @@ section{
     .heading{
         font-size: 25px;
     }
-
+    .btn{
+        margin-top: 5px;
+        padding: 8px 15px;
+        font-size: 15px;
+    }
+    .products .product-slider .box{
+        padding: 20px 10px;
+    }
+    .products .product-slider .box h3{
+        font-size: 15px;
+    }
+    .products .product-slider .box .price{
+        font-size: 13px;
+    }
+    .products .product-slider .box img{
+        height: 70px;
+        width: auto;
+    }
+    .footer{
+        text-align: center;
+    }
+    .review .review-slider .box{
+        padding: 20px 12px;
+        outline-offset: -8px;
+        outline: var(--outline);
+        box-shadow: var(--box-shadow);
+    }
+    .review .review-slider .box h3{
+        font-size: 20px;
+    }
+    .review .review-slider .box img{
+        height: 110px;
+        width: 110px;
+    }
 }
