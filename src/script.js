@@ -51,6 +51,12 @@ var swiper = new Swiper(".product-slider", {
   centeredSlides: true,
   breakpoints: {
     0: {
+      slidesPerView: 1,
+    },
+    300: {
+      slidesPerView: 1.5,
+    },
+    400: {
       slidesPerView: 2,
     },
     768: {
@@ -72,7 +78,10 @@ var swiper = new Swiper(".review-slider", {
   centeredSlides: true,
   breakpoints: {
     0: {
-      slidesPerView: 2,
+      slidesPerView: 1,
+    },
+    400: {
+      slidesPerView: 1.5,
     },
     768: {
       slidesPerView: 2,
